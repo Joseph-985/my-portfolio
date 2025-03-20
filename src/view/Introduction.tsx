@@ -8,7 +8,7 @@ const Introduction = () => {
       <section className="w-full flex items-center justify-center min-h-[600px]">
         <div className="flex flex-col items-center justify-center gap-y-[90px] !animate-fade-up">
           <div
-            className={`text-3xl lg:text-7xl font-bold text-white ${titleGradient}`}
+            className={`text-3xl lg:text-7xl font-bold text-white text-center ${titleGradient}`}
           >
             FRONT-END DEVELOPER
           </div>

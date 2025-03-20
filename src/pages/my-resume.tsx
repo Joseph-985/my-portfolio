@@ -16,21 +16,21 @@ const MyResume = () => {
         <div className="flex items-center justify-center gap-x-3 mb-4">
           <button
             onClick={() => setPageNumber(pageNumber - 1)}
-            className="text-white cursor-pointer"
+            className="text-white dark:text-black cursor-pointer"
             disabled={pageNumber === 1}
           >
             <CustomIcon icon="ArrowLeftIcon" />
           </button>
           <button
             onClick={() => setPageNumber(pageNumber + 1)}
-            className="text-white cursor-pointer"
+            className="text-white dark:text-black cursor-pointer"
             disabled={pageNumber === 3}
           >
             <CustomIcon icon="ArrowRightIcon" />
           </button>
         </div>
         <div className="flex items-center justify-center mb-4">
-          <p className="text-white">
+          <p className="text-white dark:text-black">
             Page {pageNumber} of {numPages}
           </p>
         </div>
