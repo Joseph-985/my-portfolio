@@ -1,0 +1,50 @@
+html {
+  font-family: "Poppins" !important;
+  /* @apply !bg-[#222438]; */
+}
+body {
+  scroll-behavior: smooth;
+}
+main {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.max-h-webkit {
+  max-height: -webkit-fill-available;
+  max-height: -moz-available;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.ant-collapse-content {
+  @apply !bg-gradient-to-r from-purple-600 via-blue-600 to-purple-400;
+}
+.ant-collapse-content-box p {
+  @apply !text-white;
+}
+.ant-collapse-header-text {
+  @apply !text-white !text-[20px] lg:!text-[40px] !font-medium !leading-[50px];
+}
+.ant-collapse-item-active .ant-collapse-header {
+  @apply !bg-gradient-to-r from-purple-600 via-blue-600 to-purple-400;
+}
+.ant-collapse-header {
+  @apply !bg-gradient-to-r from-purple-600 via-blue-600 to-purple-400;
+}
+.ant-collapse {
+  @apply !rounded-lg;
+}
+
+.ant-collapse-header-text {
+  @apply !ml-3;
+}
