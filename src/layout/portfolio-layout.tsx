@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import PortfolioHeader from "./portfolio-header";
 import { useColors } from "../hooks/useColors";
-import Template from "../components/framer-motion/template";
+import Template from "../components/framer-motion/Template";
 
 const PortfolioLayout = () => {
   const { appBgGradient } = useColors();
