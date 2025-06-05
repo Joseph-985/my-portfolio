@@ -16,14 +16,18 @@ const Introduction = () => {
             <div
               className={`text-2xl md:text-3xl lg:text-5xl font-bold text-white ${nameGradient}`}
             >
-              Ufomadu Joseph
+              Ufomadu Nnaemeka Joseph
             </div>
-            <div className="text-center px-10 lg:px-40 lg:text-xl text-slate-200 dark:text-black text-base lg:text-wrap md:text-wrap">
-              Hi there! 👋 I'm Ufomadu Nnaemeka, a frontend developer passionate
-              about crafting engaging and user-friendly web experiences. With a
-              strong foundation in React, HTML, CSS, and a knack for utilizing
-              frameworks like Tailwind CSS, Bootstrap, and Next.js, I bring
-              creativity and precision to every project I work on.
+            <div className="text-center px-10 lg:px-40 lg:text-xl text-slate-200 dark:text-black text-base lg:text-wrap md:text-wrap font-poppins">
+              Hi there! 👋 I am a Frontend Developer with over 4 years of
+              experience building scalable, performant, and user-centric web
+              applications using modern technologies like React, Next.js, and
+              TypeScript. Strong background in collaborating across
+              cross-functional teams, integrating APIs, and implementing
+              responsive UI based on Figma and Adobe XD designs. Adept at
+              handling app-wide state management, delivering pixel-perfect UIs,
+              and deploying production-ready features. Passionate about clean
+              code, performance optimization, and continuous learning.
             </div>
           </div>
         </div>

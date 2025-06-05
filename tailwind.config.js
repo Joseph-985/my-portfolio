@@ -72,6 +72,9 @@ export default {
           900: "#101828",
         },
       },
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],

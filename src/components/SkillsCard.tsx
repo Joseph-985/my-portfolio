@@ -14,7 +14,7 @@ const SkillsCard = ({ title, iconName, desc }: IProps) => {
   const isMedium = !isMediumLaptop ? "text-base" : "text-lg";
   return (
     <div
-      className={`!py-6 !px-4 flex flex-col items-start justify-start gap-y-4 shadow-lg min-w-[350px] !h-full w-full !rounded-lg ${skillCardGradient}`}
+      className={`!py-6 !px-4 flex flex-col items-start justify-start gap-y-4 shadow-lg min-w-[350px] !h-[400px] w-full !rounded-lg ${skillCardGradient}`}
     >
       <div
         className={`w-12 h-12 px-[7.15px] pt-[5.65px] pb-[8.65px] ${bgGradient} rounded-[28px] border-8 border-[#bc7cccda] justify-center items-center inline-flex`}
