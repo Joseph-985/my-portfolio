@@ -1,4 +1,3 @@
-// import { textGradient } from "../helpers/style";
 import { useColors } from "../hooks/useColors";
 
 const Introduction = () => {
@@ -18,7 +17,7 @@ const Introduction = () => {
             >
               Ufomadu Nnaemeka Joseph
             </div>
-            <div className="text-center px-10 lg:px-40 lg:text-xl text-slate-200 dark:text-black text-base lg:text-wrap md:text-wrap font-poppins">
+            <div className="text-center px-10 lg:px-40 lg:text-xl !text-black dark:!text-white text-base lg:text-wrap md:text-wrap font-poppins">
               Hi there! 👋 I am a Frontend Developer with over 4 years of
               experience building scalable, performant, and user-centric web
               applications using modern technologies like React, Next.js, and

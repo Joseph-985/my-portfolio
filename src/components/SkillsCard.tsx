@@ -21,11 +21,11 @@ const SkillsCard = ({ title, iconName, desc }: IProps) => {
       >
         <CustomIcon icon={iconName} className="!text-white dark:!text-black" />
       </div>
-      <div className="text-left font-semibold text-base md:!text-lg lg:!text-lg text-white dark:text-black">
+      <div className="text-left font-semibold text-base md:!text-lg lg:!text-lg text-black dark:text-white">
         {title}
       </div>
       <div
-        className={`text-left font-noraml md:!text-lg lg:!text-lg text-white dark:text-black text-balance overflow-auto ${isMedium}`}
+        className={`text-left font-noraml md:!text-lg lg:!text-lg text-black dark:text-white text-balance overflow-auto ${isMedium}`}
       >
         {desc}
       </div>

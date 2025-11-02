@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import { routes } from "./routes/index.tsx";
 import { HelmetProvider } from "react-helmet-async";
-import { DarkModeProvider } from "./context/dark-mode-context.tsx";
+import { ThemeProvider } from "./context/theme-context.tsx";
 import { ConfigProvider } from "antd";
 import { theme } from "./theme/index.ts";
 
@@ -19,11 +19,11 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <HelmetProvider>
-      <DarkModeProvider>
+      <ThemeProvider>
         <ConfigProvider theme={theme}>
           <RouterProvider router={routes} />
         </ConfigProvider>
-      </DarkModeProvider>
+      </ThemeProvider>
     </HelmetProvider>
   </React.StrictMode>
 );

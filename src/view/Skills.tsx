@@ -9,7 +9,7 @@ const Skills = () => {
 
   return (
     <section className={`md:px-5 ${isMedium} px-5`}>
-      <div className="text-2xl md:text-3xl lg:text-5xl text-slate-200 dark:!text-purple-600 text-center flex items-center justify-center !mb-10 font-semibold">
+      <div className="text-2xl md:text-3xl lg:text-5xl !text-purple-700 dark:!text-white text-center flex items-center justify-center !mb-10 font-semibold">
         My Skills
       </div>
       <MotionUl

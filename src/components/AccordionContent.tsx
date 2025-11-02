@@ -29,7 +29,7 @@ const AccordionContent = ({ content, image, url, pathName }: IProps) => {
       </div>
       <div className="hidden lg:flex justify-between items-start">
         <div className="w-[50%]">
-          <div className="border-b-2 border-white text-white text-2xl font-normal leading-[40px] mb-3 pb-3">
+          <div className="text-white text-2xl font-normal leading-[40px] mb-3 pb-3">
             {content}
           </div>
           {url && (

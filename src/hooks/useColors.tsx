@@ -1,7 +1,8 @@
-import { useDarkModeContext } from "../context/dark-mode-context";
+import { useTheme } from "../context/theme-context";
 
 export const useColors = () => {
-  const { dark } = useDarkModeContext();
+  const { dark } = useTheme();
+  console.log("Dark mode is", dark);
 
   const textGradient = dark
     ? "bg-gradient-to-r from-purple-600 via-blue-600 to-purple-400 inline-block text-transparent bg-clip-text"

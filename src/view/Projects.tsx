@@ -5,7 +5,7 @@ const Projects = () => {
   const { items } = useAccordion();
   return (
     <section className="mt-20 ">
-      <div className="text-2xl md:text-3xl lg:text-5xl text-slate-200 dark:text-purple-600 text-center flex items-center justify-center !mb-10 font-semibold">
+      <div className="text-2xl md:text-3xl lg:text-5xl text-purple-700 dark:text-white text-center flex items-center justify-center !mb-10 font-semibold">
         Projects
       </div>
       <div className="!w-full mt-5 lg:px-10 px-4">

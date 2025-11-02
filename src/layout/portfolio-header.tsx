@@ -1,4 +1,4 @@
-import { useDarkModeContext } from "../context/dark-mode-context";
+import { useTheme } from "../context/theme-context";
 import CustomIcon from "../components/CustomIcon";
 import { useEffect, useState } from "react";
 import { IconName } from "../types/app";
@@ -9,7 +9,7 @@ import { useMobileView } from "../hooks/useMobileView";
 
 const PortfolioHeader = () => {
   const [icon, setIcon] = useState<IconName>("SunIcon");
-  const { toggleMode, dark } = useDarkModeContext();
+  const { dark, toggleTheme } = useTheme();
   const { isMobileView } = useMobileView();
 
   const navigate = useNavigate();
@@ -39,14 +39,14 @@ const PortfolioHeader = () => {
       <div className="flex items-center justify-center lg:justify-end gap-x-2">
         <div className="flex items-center justify-center gap-x-2">
           <Button
-            className="rounded-full px-4 py-2 bg-white/10 backdrop-blur-md border border-purple-400/40 text-white dark:bg-purple-600 hidden lg:block"
+            className="rounded-full px-4 py-2 bg-white/10 backdrop-blur-md border border-purple-400/40 text-purple-600 dark:!bg-purple-600 hidden lg:block dark:text-white"
             onClick={() => navigate("/my-resume")}
             size={isMobileView ? "small" : "large"}
           >
             View My Resume
           </Button>
           <Button
-            className="rounded-full px-4 py-2 bg-white/10 backdrop-blur-md border border-purple-400/40 text-white dark:bg-purple-600"
+            className="rounded-full px-4 py-2 bg-white/10 backdrop-blur-md border border-purple-400/40 text-purple-600 dark:bg-purple-600 dark:text-white"
             onClick={() => downloadCvPDFHandler()}
             size={isMobileView ? "small" : "large"}
           >
@@ -54,7 +54,7 @@ const PortfolioHeader = () => {
           </Button>
         </div>
         <button
-          onClick={toggleMode}
+          onClick={toggleTheme}
           className="text-purple-600 dark:text-slate-200"
         >
           <div className="rounded-full w-[30px] h-[30px] md:w-[35px] md:h-[35px] lg:w-[40px] lg:h-[40px] bg-white flex items-center justify-center dark:bg-purple-600 shadow-lg">
