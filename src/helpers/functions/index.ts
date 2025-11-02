@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(...inputs));
 }
 
-export function downloadCvPDFHandler(fileName = "CV.pdf") {
+export function downloadCvPDFHandler(fileName: string = "CV.pdf") {
   const filePath = `/${fileName}`;
   const link = document.createElement("a");
   link.href = filePath;

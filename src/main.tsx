@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import { routes } from "./routes/index.tsx";
-import { HelmetProvider } from "react-helmet-async";
 import { ThemeProvider } from "./context/theme-context.tsx";
 import { ConfigProvider } from "antd";
 import { theme } from "./theme/index.ts";
@@ -18,12 +17,10 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <HelmetProvider>
-      <ThemeProvider>
-        <ConfigProvider theme={theme}>
-          <RouterProvider router={routes} />
-        </ConfigProvider>
-      </ThemeProvider>
-    </HelmetProvider>
+    <ThemeProvider>
+      <ConfigProvider theme={theme}>
+        <RouterProvider router={routes} />
+      </ConfigProvider>
+    </ThemeProvider>
   </React.StrictMode>
 );
